@@ -10,7 +10,7 @@ import androidx.room.Query
 interface MarkerDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addMarker(marker: Marker): Int
+    suspend fun addMarker(marker: Marker)
 
     @Query("SELECT * FROM marker_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<Marker>>
