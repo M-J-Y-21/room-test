@@ -34,7 +34,7 @@ class ListFragment : Fragment() {
         val view = binding.root
 
 
-        val adapter = ListAdapter()
+        val adapter = com.example.roomtut.fragments.list.ListAdapter()
         val recyclerView = binding.recyclerView
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
